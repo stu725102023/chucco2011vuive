@@ -179,6 +179,12 @@
             animation: fadeIn 0.5s ease-in-out;
             max-width: 90%;
             box-sizing: border-box; 
+            width: 90%; 
+            max-width: 700px; 
+            max-height: 85vh;
+            overflow-y: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
         }
 
         #main-title {
@@ -212,6 +218,11 @@
             from { opacity: 0; transform: scale(0.9); }
             to { opacity: 1; transform: scale(1); }
         }
+        #card{
+            background: 
+            linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+            url('nen1.jpg') no-repeat center/cover;
+        }
     </style>
 </head>
 <body>
@@ -225,10 +236,48 @@
     </div>
 
     <div id="card">
-        <h1 id="main-title"></h1>
-        <p class="message">Chúc cô luôn thành công trong sự nghiệp, có nhiều niềm vui và hạnh phúc trong cuộc sống!</p>
+        <h1 id="main-title">Kính tặng Cô Lan</h1>
+        <!-- <p class="message" style="font-weight: 500; font-size: 1.1rem; margin-top: -15px; margin-bottom: 20px;">
+            Nhân ngày Nhà giáo Việt Nam 20/11
+        </p> -->
+
         <img src="https://media.tenor.com/E8j-nQk3D-cAAAAi/peach-goma.gif" alt="Cute animation">
-        <!-- <p class="footer-text">Lời chúc ở đây</p> -->
+
+        <div class="message" style="text-align: left; max-width: 550px; margin-top: 25px; font-size: 1.15rem; line-height: 1.6;">
+            
+            <p style="font-weight: bold; color: #d6336c;">Cô ơi,</p>
+            
+            <p style="margin-bottom: 1rem;">
+                Nhân dịp 20/11, chúng em xin gửi lời tri ân chân thành và sâu sắc nhất đến Cô. 
+                Cảm ơn Cô rất nhiều vì đã nhận lời hướng dẫn chúng em trong chặng đường làm 
+                Khóa luận tốt nghiệp đầy thử thách này.
+            </p>
+
+            <p style="margin-bottom: 1rem;">
+                Chính sự tận tâm, những góp ý chi tiết và kịp thời của Cô đã giúp chúng em 
+                vượt qua biết bao khó khăn, từ việc định hình đề tài, xử lý số liệu cho đến 
+                hoàn thiện từng câu chữ. Kiến thức và kinh nghiệm của Cô là hành trang quý giá nhất.
+            </p>
+
+            <p>
+                Kính chúc Cô thật nhiều sức khỏe, luôn giữ mãi nụ cười rạng rỡ và nhiệt huyết với nghề. 
+                Chúc Cô tiếp tục gặt hái nhiều thành công hơn nữa trong sự nghiệp cao quý của mình. 
+                Chúng em kính chúc Cô một ngày Nhà giáo Việt Nam thật hạnh phúc!
+            </p>
+        </div>
+
+        <div style="text-align: right; width: 100%; max-width: 550px; margin-top: 30px; font-family: 'Quicksand', sans-serif;">
+            <p style="font-size: 1.1rem; font-weight: 500; color: #333;">
+                Với tất cả lòng kính trọng và biết ơn,
+            </p>
+            <p style="font-family: 'Dancing Script', cursive; font-size: 2.2rem; color: #d6336c; margin-top: 8px;">
+                Ngọc Ánh - Đức Giang - Đoàn Hương
+            </p>
+            <p style="font-size: 1rem; font-style: italic; color: #555; margin-top: 4px;">
+                Sinh viên Khóa luận - Bộ môn Khoa học máy tính
+            </p>
+        </div>
+
     </div>
 
     <script>
